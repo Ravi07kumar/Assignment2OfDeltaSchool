@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.activity.activity.activity.LoginActivity">
+
+   <TextView
+       android:id="@+id/tv_login_view"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/login_tv_text"
+       android:layout_marginLeft="@dimen/tv_margin_left"
+       android:layout_marginTop="@dimen/root_margin_top"
+       android:textSize="@dimen/large_text_size"
+       />
+    <EditText
+        android:id="@+id/et_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login_view"
+        android:layout_marginLeft="@dimen/tv_margin_left"
+        android:hint="@string/login_et_email_hint"
+        android:layout_marginTop="@dimen/et_margin_top"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="@dimen/tv_margin_right"
+        android:singleLine="true"
+        />
+    <EditText
+        android:id="@+id/et_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_login_email"
+        android:hint="@string/login_et_password_hint"
+        android:layout_marginLeft="@dimen/tv_margin_left"
+        android:inputType="textPassword"
+        android:layout_marginTop="@dimen/tv_margin_top"
+        android:layout_marginRight="@dimen/tv_margin_right"
+        android:singleLine="true"
+        />
+
+ <ImageView
+     android:id="@+id/iv_login_password_icon"
+     android:layout_width="25dp"
+     android:layout_height="20dp"
+     android:layout_alignParentTop="true"
+     android:layout_alignParentEnd="true"
+     android:layout_centerVertical="true"
+     android:layout_marginTop="350dp"
+     android:layout_marginEnd="42dp"
+     android:background="@drawable/ic_visibility_black_24dp" />
+
+ <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_login_password"
+        android:layout_marginLeft="@dimen/tv_margin_left"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/custom_btn"
+        android:text="@string/login_btn_text"
+        android:layout_marginRight="@dimen/tv_margin_right"
+        />
+
+ <TextView
+     android:id="@+id/tv_login_Reg"
+     android:layout_width="wrap_content"
+     android:layout_height="36dp"
+     android:layout_below="@+id/btn_login_login"
+     android:layout_marginLeft="@dimen/tv_margin_left_view"
+     android:layout_marginTop="@dimen/tv_margin_top_lower_view"
+     android:text="@string/login_tv_login_lower_Text" />
+
+</RelativeLayout>

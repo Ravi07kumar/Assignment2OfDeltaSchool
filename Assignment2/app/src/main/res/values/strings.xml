@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+
+    <!-- LoginActivity -->
+
+    <string name="login_tv_text">Log in to your \naccount</string>
+    <string name="login_et_email_hint">Email</string>
+    <string name="login_et_password_hint">Password</string>
+    <string name="login_btn_text">Log in</string>
+    <string name="login_tv_login_lower_Text">Dont have an account? REGISTER </string>
+    <string name="login_err_no_email">Please Enter Email Address.</string>
+    <string name="login_err_no_password">Please Enter Password.</string>
+    <string name="login_err_invalid_email">Invalid Email Address!!</string>
+
+    <!-- RegisterActivity -->
+    <string name="register_tv_text">Welcome \n\nPlease provide your basic information</string>
+    <string name="register_et_full_name_hint">Full Name</string>
+    <string name="register_et_email_hint">Email</string>
+    <string name="register_et_password_hint">Password</string>
+    <string name="register_et_gender_hint">Gender(Male or Female or Other)</string>
+    <string name="register_et_dob_hint">Date of Birth</string>
+    <string name="register_et_user_type_hint">User Type</string>
+    <string name="register_et_occupation_hint">Occupation</string>_
+    <string name="register_tv_sign_up">Sign up with different account?</string>
+    <string name="register_btn_continue">Continue</string>
+    <string name="register_err_no_full_name">Please Enter Name</string>
+    <string name="register_err_no_email">Please Enter Email</string>
+    <string name="register_err_no_password">Please Enter Password</string>
+    <string name="register_err_no_gender">Please Enter Gender</string>
+    <string name="register_err_no_dob">Please Enter DOB</string>
+    <string name="register_err_no_user_type">Please Enter UserType</string>
+    <string name="register_err_no_occupation">Please Enter Occupation</string>
+    <string name="register_err_no_correct_gender">"Enter Correct Gender like Male or Female or Other"</string>
+
+    <!-- OtpActivity -->
+    <string name="otp_tv_verification_text">OTP Verification  \n\nEnter the verification code\nsent to your number via sms.</string>
+    <string name="otp_btn_resend_text">Resend</string>
+    <string name="otp_btn_submit_text">Submit</string>
+    <string name="otp_err_no_otp">Please Enter OTP Field</string>
+    <string name="otp_msg_resend_btn">OTP Sent.</string>
+    <string name="otp_msg_submit_btn">Welcome To My First App.</string>
+
+
+    <!--SplashActivity-->
+
+    <string name="splash_tv_text">Assignment 2</string>
+</resources>
