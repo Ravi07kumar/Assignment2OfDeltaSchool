@@ -72,7 +72,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId())
         {
             case R.id.btn_login_login:
-                if(validation()==true){
+                if(validation()){
                     checkEmailPassword();
                 }
 
@@ -184,7 +184,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 flag++;
           }
           }
-        if (flag==0){
+        if (flag==0 && sList.size()!=0){
             View view=findViewById(R.id.btn_login_login);
             Snackbar.make(view,"Enter Correct Email ",Snackbar.LENGTH_SHORT).show();
         }

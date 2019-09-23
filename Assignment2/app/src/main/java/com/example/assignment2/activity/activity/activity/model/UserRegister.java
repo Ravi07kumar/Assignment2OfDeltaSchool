@@ -26,55 +26,27 @@ public class UserRegister {
         return mName;
     }
 
-    public void setmName(String mName) {
-        this.mName = mName;
-    }
-
     public String getmEmail() {
         return mEmail;
-    }
-
-    public void setmEmail(String mEmail) {
-        this.mEmail = mEmail;
     }
 
     public String getmPassword() {
         return mPassword;
     }
 
-    public void setmPassword(String mPassword) {
-        this.mPassword = mPassword;
-    }
-
     public String getmGender() {
         return mGender;
-    }
-
-    public void setmGender(String mGender) {
-        this.mGender = mGender;
     }
 
     public String getmDob() {
         return mDob;
     }
 
-    public void setmDob(String mDob) {
-        this.mDob = mDob;
-    }
-
     public String getmUserType() {
         return mUserType;
     }
 
-    public void setmUserType(String mUserType) {
-        this.mUserType = mUserType;
-    }
-
     public String getmOccupation() {
         return mOccupation;
-    }
-
-    public void setmOccupation(String mOccupation) {
-        this.mOccupation = mOccupation;
     }
 }

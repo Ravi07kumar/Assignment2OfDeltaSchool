@@ -60,7 +60,7 @@
         android:layout_marginLeft="@dimen/tv_margin_left"
         android:layout_marginTop="25dp"
         android:textColor="#ffffff"
-        android:background="@drawable/custom_btn"
+        android:background="@drawable/custom_solid_btn"
         android:text="@string/login_btn_text"
         android:layout_marginRight="@dimen/tv_margin_right"
         />

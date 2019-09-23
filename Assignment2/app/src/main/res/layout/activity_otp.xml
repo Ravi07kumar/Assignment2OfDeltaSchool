@@ -98,7 +98,7 @@
         android:layout_marginLeft="@dimen/tv_register_margin_left"
         android:layout_marginRight="@dimen/tv_register_margin_right"
         android:layout_weight="1"
-        android:background="@drawable/custom_btnstoke"
+        android:background="@drawable/custom_stoke_btn"
         android:text="@string/otp_btn_resend_text"/>
 
     <Button
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_marginRight="@dimen/tv_register_margin_right"
-        android:background="@drawable/custom_btn"
+        android:background="@drawable/custom_solid_btn"
         android:text="@string/otp_btn_submit_text"
         android:textColor="@color/color_btn_text"/>
     </LinearLayout>
