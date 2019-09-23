@@ -31,7 +31,7 @@
       android:id="@+id/img_profile"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:src="@drawable/img_user_profile"
+      android:src="@drawable/ic_img_user_profile"
       android:layout_below="@+id/tv_information"
       android:layout_marginTop="@dimen/tv_margin_top"
       android:layout_centerInParent="true"

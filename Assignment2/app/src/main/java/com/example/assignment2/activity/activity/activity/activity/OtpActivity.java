@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.assignment2.R;
+import com.example.assignment2.activity.activity.activity.utils.CommanUtil;
 import com.google.android.material.snackbar.Snackbar;
 
 public class OtpActivity extends AppCompatActivity implements OnClickListener {
@@ -60,13 +61,13 @@ public class OtpActivity extends AppCompatActivity implements OnClickListener {
             case R.id.btn_otp_resend:
               if(validation()) {
                   View view = findViewById(R.id.btn_otp_resend);
-                  Snackbar.make(view, getString(R.string.otp_msg_resend_btn), Snackbar.LENGTH_SHORT).show();
+                  CommanUtil.showSnackbar(view,getString(R.string.otp_msg_resend_btn));
                   resetOtp();
               }break;
             case R.id.btn_otp_submit:
                 if(validation()) {
                     View view = findViewById(R.id.btn_otp_submit);
-                    Snackbar.make(view, getString(R.string.otp_msg_submit_btn), Snackbar.LENGTH_SHORT).show();
+                    CommanUtil.showSnackbar(view,getString(R.string.otp_msg_submit_btn));
                     resetOtp();
                 }break;
         }
@@ -80,16 +81,16 @@ public class OtpActivity extends AppCompatActivity implements OnClickListener {
 
         View view=findViewById(R.id.btn_otp_submit);
         if(etOtp1.getText().toString().trim().length()==0){
-            Snackbar.make(view,getString(R.string.otp_err_no_otp),Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.otp_err_no_otp));
             return false; }
         else if(etOtp2.getText().toString().trim().length()==0){
-            Snackbar.make(view,getString(R.string.otp_err_no_otp),Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.otp_err_no_otp));
             return false; }
         else if(etOtp3.getText().toString().trim().length()==0){
-            Snackbar.make(view,getString(R.string.otp_err_no_otp),Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.otp_err_no_otp));
             return false; }
         else if(etOtp4.getText().toString().trim().length()==0){
-            Snackbar.make(view,getString(R.string.otp_err_no_otp),Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.otp_err_no_otp));
             return false; }
 
 

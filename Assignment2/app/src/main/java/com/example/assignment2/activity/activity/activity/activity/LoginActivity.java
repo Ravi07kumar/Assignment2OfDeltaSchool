@@ -22,6 +22,7 @@ import android.widget.TextView;
 
 import com.example.assignment2.R;
 import com.example.assignment2.activity.activity.activity.model.UserRegister;
+import com.example.assignment2.activity.activity.activity.utils.CommanUtil;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
@@ -59,8 +60,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         btnLogin.setOnClickListener(this);
         ivIcon.setOnClickListener(this);
 
-//        etEmail.getText().toString().trim();
-//        etPassword.getText().toString().trim();
+
 
        }
 
@@ -138,19 +138,16 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         View view=findViewById(R.id.btn_login_login);
         if(etEmail.getText().toString().trim().length()==0){
-           // Toast.makeText(this, getString(R.string.login_err_no_email), Toast.LENGTH_SHORT).show();
-
-            Snackbar.make(view,getString(R.string.login_err_no_email),Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.login_err_no_email));
             return false;
         }
 
          else if (etPassword.getText().toString().trim().length()==0){
-
-            Snackbar.make(view,getString(R.string.login_err_no_password),Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.login_err_no_password));
             return false;
         }
         else if(sList.size()==0) {
-            Snackbar.make(view,"User Does not exist",Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.login_err_list_size_empty));
             return false;
         }
          return true;
@@ -186,7 +183,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
           }
         if (flag==0 && sList.size()!=0){
             View view=findViewById(R.id.btn_login_login);
-            Snackbar.make(view,"Enter Correct Email ",Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.login_err_invalid_email));
+
         }
         }
 

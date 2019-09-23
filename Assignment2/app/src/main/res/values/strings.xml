@@ -11,6 +11,7 @@
     <string name="login_err_no_email">Please Enter Email Address.</string>
     <string name="login_err_no_password">Please Enter Password.</string>
     <string name="login_err_invalid_email">Invalid Email Address!!</string>
+    <string name="login_err_list_size_empty">"User Does not exist"</string>
 
     <!-- RegisterActivity -->
     <string name="register_tv_text">Welcome \n\nPlease provide your basic information</string>
@@ -38,7 +39,7 @@
     <string name="otp_btn_submit_text">Submit</string>
     <string name="otp_err_no_otp">Please Enter OTP Field</string>
     <string name="otp_msg_resend_btn">OTP Sent.</string>
-    <string name="otp_msg_submit_btn">Welcome To My First App.</string>
+    <string name="otp_msg_submit_btn">Welcome To My App.</string>
 
 
     <!--SplashActivity-->

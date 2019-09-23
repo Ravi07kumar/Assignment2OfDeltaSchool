@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.assignment2.R;
 import com.example.assignment2.activity.activity.activity.model.UserRegister;
+import com.example.assignment2.activity.activity.activity.utils.CommanUtil;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Calendar;
@@ -99,34 +100,36 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         View view=findViewById(R.id.btn_continue);
         String email=etEmail.getText().toString().trim();
         String gender1=etGender.getText().toString().trim().toLowerCase();
-        if(etFullName.getText().toString().trim().length()==0){
-            Snackbar.make(view,getString(R.string.register_err_no_full_name),Snackbar.LENGTH_SHORT).show();
+        String validName="[a-zA-Z ]+";
+
+        if(etFullName.getText().toString().trim().length()==0 || !etFullName.getText().toString().trim().matches(validName)){
+            CommanUtil.showSnackbar(view,getString(R.string.register_err_no_full_name));
             return false; }
         else if(etEmail.getText().toString().trim().length()==0){
-            Snackbar.make(view,getString(R.string.register_err_no_email),Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.login_err_no_email));
             return false; }
         else if(etPassword.getText().toString().trim().length()==0){
-            Snackbar.make(view,getString(R.string.login_err_no_password),Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.login_err_no_password));
             return false; }
         else if(etGender.getText().toString().trim().length()==0){
-            Snackbar.make(view,getString(R.string.register_err_no_gender),Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.register_err_no_gender));
             return false; }
         else if(etDob.getText().toString().trim().length()==0){
-            Snackbar.make(view,getString(R.string.register_err_no_dob),Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.register_err_no_dob));
             return false; }
         else if(etUserType.getText().toString().trim().length()==0){
-            Snackbar.make(view,getString(R.string.register_err_no_user_type),Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.register_err_no_user_type));
             return false; }
         else if(etOccupation.getText().toString().trim().length()==0){
-            Snackbar.make(view,getString(R.string.register_err_no_occupation),Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.register_err_no_occupation));
             return false; }
 
          else if(!email.matches(emailPattern) && email.length()>0) {
-            Snackbar.make(view, getString(R.string.login_err_invalid_email), Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.login_err_invalid_email));
             return false;
         }
          else if (!(male.equals(gender1) || female.equals(gender1)||other.equals(gender1))){
-                Snackbar.make(view, getString(R.string.register_err_no_correct_gender), Snackbar.LENGTH_SHORT).show();
+            CommanUtil.showSnackbar(view,getString(R.string.register_err_no_correct_gender));
                 return false; }
 
         return true;
