@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TextView dimens-->
+    <dimen name="tv_small">8sp</dimen>
+    <dimen name="tv_medium">16sp</dimen>
+    <dimen name="tv_large">24sp</dimen>
+
+    <!--Margin-->
+    <dimen name="btn_margin_end">100dp</dimen>
+    <dimen name="comm_layout_margin_start">8dp</dimen>
+    <dimen name="comm_layout_margin_end">8dp</dimen>
+    <dimen name="comm_layout_margin_top">8dp</dimen>
+    <dimen name="btn_sec_margin_bottom">2dp</dimen>
+    <dimen name="btn_sec_margin_end">3dp</dimen>
+    <dimen name="btn_sec_margin_start">3dp</dimen>
+    <dimen name="btn_pri_margin_top">16dp</dimen>
+    <dimen name="btn_pri_margin_end">32dp</dimen>
+    <dimen name="btn_pri_margin_start">32dp</dimen>
+
+
+
+
+    <!--Padding-->
+    <dimen name="tv_padding_top">8dp</dimen>
+    <dimen name="tv_padding_bottom">8dp</dimen>
+    <dimen name="tv_padding_left">8dp</dimen>
+    <dimen name="rl_layout_padding_bottom">20dp</dimen>
+
+
+
+    <!--layout-->
+    <dimen name="layout_height">50dp</dimen>
+    <dimen name="rl_layout_height">30dp</dimen>
+    <dimen name="rl_layout_width">30dp</dimen>
+
+
+
+    <!--icon-->
+    <dimen name="icon_layout_height">30dp</dimen>
+    <dimen name="icon_layout_width">30dp</dimen>
+    <dimen name="icon_tool_margin_end">60dp</dimen>
+
+    <!--custom dialog-->
+    <dimen name="dia_layout_margin_end">100dp</dimen>
+    <dimen name="dia_layout_margin_start">100dp</dimen>
+
+
+</resources>

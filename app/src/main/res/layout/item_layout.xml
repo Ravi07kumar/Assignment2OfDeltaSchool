@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/custom_stoke_btn"
+    android:layout_marginTop="@dimen/comm_layout_margin_top"
+    android:layout_marginEnd="@dimen/comm_layout_margin_end"
+    android:layout_marginStart="@dimen/comm_layout_margin_start"
+    android:paddingBottom="@dimen/tv_padding_bottom"
+    >
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item_tv_text1"
+        android:textSize="@dimen/tv_large"
+        android:textColor="@color/colorGreen"
+        android:paddingLeft="@dimen/tv_padding_left"
+        />
+    <TextView
+        android:id="@+id/tv_item_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item_tv_text2"
+        android:textSize="@dimen/tv_large"
+        android:textColor="@color/colorGreen"
+        android:layout_below="@+id/tv_item_name"
+        android:paddingLeft="@dimen/tv_padding_left"
+        />
+
+
+
+</RelativeLayout>

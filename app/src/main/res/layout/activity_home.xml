@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.activity.HomeActivity">
+
+   <include layout="@layout/toolbar"
+       android:id="@+id/toolbar"
+       />
+
+    <TextView
+        android:id="@+id/tv_home_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/home_tv_message"
+        android:gravity="center"
+        android:textSize="@dimen/tv_large"
+        android:layout_marginEnd="@dimen/btn_margin_end"
+        android:textColor="@color/colorGreen"
+        />
+
+    <Button
+        android:id="@+id/btn_home_add_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/home_btn_add_student_text"
+        android:background="@drawable/custom_stoke_btn"
+        android:textColor="@color/colorGreen"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/btn_sec_margin_end"
+        android:layout_marginStart="@dimen/btn_sec_margin_start"
+        android:layout_marginBottom="@dimen/btn_sec_margin_bottom"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/btn_home_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/btn_home_add_student"
+        android:layout_marginBottom="@dimen/btn_sec_margin_bottom"
+        />
+</RelativeLayout>
+
+
+

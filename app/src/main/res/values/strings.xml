@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Assignment3</string>
+
+    <!--FirstScreenActivity-->
+    <string name="splash_tv_message">Assignment 3</string>
+
+    <!--HomeActivity-->
+    <string name="home_tv_message">No students added yet.</string>
+    <string name="home_btn_add_student_text">Add Student</string>
+    <string name="add_err_no_listiteam"> OPPS!! Please Add Student First.</string>
+    <string name="add_err_correct_class"> OPPS!! Please Enter Correct Class.</string>
+
+
+    <!--ToolbarLayout-->
+    <string name="tool_text_home">Home</string>
+    <string name="tool_text_student">Add Student</string>
+    <string name="tool_text_update">Update</string>
+    <string name="tool_text_view">View Student</string>
+
+    <!--ItemLayout-->
+    <string name="item_tv_text1">Name Of The Student</string>
+    <string name="item_tv_text2">Class of student</string>
+
+
+    <!--AddStudentLayout-->
+    <string name="add_student_et_hint_name">Student name</string>
+    <string name="add_student_et_hint_class">Class</string>
+    <string name="add_student_et_hint_roll">Roll no</string>
+    <string name="add_student_btn_text_submit">Submit</string>
+    <string name="add_err_no_name">Please Enter Name.</string>
+    <string name="add_err_no_class">Please Enter Class Valid Input as Integer.</string>
+    <string name="add_err_no_rn">Please Enter Roll Number as Integer and should be less than 9 digit.</string>
+    <string name="add_err_no_valid_rn">"Please Enter Class Between 1 to 12."</string>
+    <string name="add_err_exist_student">Data already exist</string>
+
+    <!--CustomDialog-->
+    <string name="cus_tv_text_view">View</string>
+    <string name="cus_tv_text_edit">Edit</string>
+    <string name="cus_tv_text_delete">Delete</string>
+
+</resources>

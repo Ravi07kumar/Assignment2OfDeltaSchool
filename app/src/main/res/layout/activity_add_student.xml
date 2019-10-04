@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.activity.AddStudentActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+    />
+    <EditText
+        style="@style/AddStudent"
+        android:id="@+id/et_add_std_name"
+        android:hint="@string/add_student_et_hint_name"
+        android:background="@drawable/edittext_selector_state"
+        android:layout_marginStart="@dimen/comm_layout_margin_start"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/comm_layout_margin_top"
+        android:textColorHint="@color/text_color"
+        android:singleLine="true"
+        />
+    <EditText
+        style="@style/AddStudent"
+        android:id="@+id/et_add_std_class"
+        android:hint="@string/add_student_et_hint_class"
+        android:background="@drawable/edittext_selector_state"
+        android:layout_below="@+id/et_add_std_name"
+        android:maxLength="2"
+        android:textColorHint="@color/text_color"
+
+
+        />
+    <EditText
+        style="@style/AddStudent"
+        android:id="@+id/et_add_std_rn"
+        android:hint="@string/add_student_et_hint_roll"
+        android:background="@drawable/edittext_selector_state"
+        android:layout_below="@+id/et_add_std_class"
+        android:textColorHint="@color/text_color"
+        />
+
+    <Button
+        style="@style/AddStudent"
+        android:id="@+id/btn_add_std_submit"
+        android:text="@string/add_student_btn_text_submit"
+        android:background="@drawable/custom_stoke_btn"
+        android:layout_marginStart="@dimen/btn_pri_margin_start"
+        android:layout_marginEnd="@dimen/btn_pri_margin_end"
+        android:layout_below="@+id/et_add_std_rn"
+        android:layout_marginTop="@dimen/btn_pri_margin_top"
+        android:gravity="center"
+        android:textSize="@dimen/tv_medium"
+        android:textColor="@color/colorGreen"
+        />
+
+
+
+</RelativeLayout>

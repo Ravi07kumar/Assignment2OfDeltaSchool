@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Customize my attribute. -->
+    <style name="myStyle">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/tv_large</item>
+
+
+    </style>
+    <style name="AddStudent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/comm_layout_margin_end</item>
+        <item name="android:layout_marginStart">@dimen/comm_layout_margin_start</item>
+        <item name="android:layout_marginTop">@dimen/comm_layout_margin_top</item>
+        <item name="android:paddingTop">@dimen/tv_padding_top</item>
+        <item name="android:paddingBottom">@dimen/tv_padding_bottom</item>
+        <item name="android:paddingLeft">@dimen/tv_padding_left</item>
+
+
+    </style>
+
+
+</resources>
